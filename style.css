@@ -31,13 +31,17 @@ body {
     display: flex;
     flex-direction: column;
     grid-template-rows: auto auto;
-    width: 370px;
-    /* height: 700px; */
+    max-width: 375px;
+    width: 90%;
 }
-.card-image {
+.card-image-mobile {
     max-width: 400px;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
+    width: 100%;
+}
+.card-image-desktop {
+    display: none;
 }
 .card-body {
     background-color: var(--white);
@@ -57,9 +61,11 @@ body {
 .product-name {
     font-family: "Fraunces", sans-serif;
     font-size: 2.12rem;
+    font-size: clamp(1.5rem, 9vw, 2.12rem);
     padding: 12px 0px;
     max-width: 310px;
     line-height: 1;
+    width: 90%;
 }
 .product-description {
     font-size: 14px;
@@ -81,9 +87,9 @@ body {
     font-size: 14px;
     color: var(--dark-grayish-blue);
     text-decoration: line-through;
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
-.add-to-cart{
+.add-to-cart {
     background-color: var(--cyan);
     padding: 1.2rem 0;
     border: none;
@@ -95,6 +101,24 @@ body {
     transition-duration: 200ms;
     cursor: pointer;
 }
-.add-to-cart:hover{
+.add-to-cart:hover {
     background-color: hsl(158, 36%, 28%);
+}
+
+@media (min-width: 700px) {
+    .card {
+        flex-direction: row;
+        width: auto;
+    }
+    .card-image-mobile {
+        display: none;
+    }
+    .card-image-desktop {
+        display: unset;
+        max-width: 400px;
+        border-radius: 10px 0 0 10px;
+    }
+    .card-body {
+        border-radius: 0 10px 10px 0;
+    }
 }
