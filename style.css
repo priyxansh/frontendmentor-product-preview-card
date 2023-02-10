@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+    --cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+.wrapper {
+    height: 100vh;
+    overflow: scroll;
+    background-color: var(--cream);
+    display: grid;
+    place-items: center;
+}
+.card {
+    --border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: auto auto;
+    width: 370px;
+    /* height: 700px; */
+}
+.card-image {
+    max-width: 400px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+.card-body {
+    background-color: var(--white);
+    padding: 1.5rem 1.5rem;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+}
+.product-type {
+    color: var(--dark-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+.product-name {
+    font-family: "Fraunces", sans-serif;
+    font-size: 2.12rem;
+    padding: 12px 0px;
+    max-width: 310px;
+    line-height: 1;
+}
+.product-description {
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.55;
+    max-width: 292px;
+}
+.product-price {
+    font-size: 2rem;
+    color: var(--cyan);
+    font-family: "Fraunces", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 17px 0;
+}
+.old-price {
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+    font-family: "Montserrat",sans-serif;
+}
+.add-to-cart{
+    background-color: var(--cyan);
+    padding: 1.2rem 0;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+.add-to-cart:hover{
+    background-color: hsl(158, 36%, 28%);
+}
