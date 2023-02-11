@@ -61,11 +61,11 @@ body {
 .product-name {
     font-family: "Fraunces", sans-serif;
     font-size: 2.12rem;
-    font-size: clamp(1.5rem, 9vw, 2.12rem);
+    font-size: clamp(1.5rem, 8vw, 2.12rem);
     padding: 12px 0px;
-    max-width: 310px;
+    max-width: 294px;
     line-height: 1;
-    width: 90%;
+    /* width: 90%; */
 }
 .product-description {
     font-size: 14px;
@@ -108,7 +108,7 @@ body {
 @media (min-width: 700px) {
     .card {
         flex-direction: row;
-        width: auto;
+        max-width: 600px;
     }
     .card-image-mobile {
         display: none;
@@ -117,6 +117,7 @@ body {
         display: unset;
         max-width: 400px;
         border-radius: 10px 0 0 10px;
+        width: 50%;
     }
     .card-body {
         border-radius: 0 10px 10px 0;
