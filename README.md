@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 <!-- - Solution URL: [Solution]() -->
-- Live Site URL: [Live Site](https://priyxansh.github.io/frontendmentor-product-preview-card/)
+- [Live Site](https://priyxansh.github.io/frontendmentor-product-preview-card/)
 
 ### Built with
 
