@@ -16,14 +16,10 @@
     box-sizing: border-box;
 }
 body {
-    overflow: hidden;
-}
-.wrapper {
-    height: 100vh;
-    overflow: scroll;
-    background-color: var(--cream);
+    min-height: 100vh;
     display: grid;
     place-items: center;
+    background-color: var(--cream);
 }
 .card {
     --border-radius: 10px;
@@ -33,6 +29,7 @@ body {
     grid-template-rows: auto auto;
     max-width: 375px;
     width: 90%;
+    margin: auto;
 }
 .card-image-mobile {
     max-width: 400px;
@@ -45,11 +42,12 @@ body {
 }
 .card-body {
     background-color: var(--white);
-    padding: 1.5rem 1.5rem;
+    padding: 1.3rem 1.3rem;
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
 }
 .product-type {
     color: var(--dark-grayish-blue);
@@ -60,19 +58,18 @@ body {
 }
 .product-name {
     font-family: "Fraunces", sans-serif;
-    font-size: 2.12rem;
-    font-size: clamp(1.5rem, 8vw, 2.12rem);
-    padding: 12px 0px;
-    max-width: 294px;
+    font-size: clamp(1.5rem, 8vw, 2rem);
+    padding: 0.375em 0px;
+    max-width: 245px;
     line-height: 1;
     /* width: 90%; */
 }
 .product-description {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--dark-grayish-blue);
     font-family: "Montserrat", sans-serif;
     line-height: 1.55;
-    max-width: 292px;
+    max-width: 265px;
 }
 .product-price {
     font-size: 2rem;
@@ -81,10 +78,10 @@ body {
     display: flex;
     align-items: center;
     gap: 1.25rem;
-    padding: 17px 0;
+    padding: 0.53em 0;
 }
 .old-price {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--dark-grayish-blue);
     text-decoration: line-through;
     font-family: "Montserrat", sans-serif;
@@ -97,7 +94,7 @@ body {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    transition-property: background-color,scale;
+    transition-property: background-color, scale;
     transition-duration: 200ms;
     cursor: pointer;
     display: flex;
@@ -115,18 +112,20 @@ body {
 @media (min-width: 700px) {
     .card {
         flex-direction: row;
-        max-width: 600px;
+        max-width: 800px;
     }
     .card-image-mobile {
         display: none;
     }
     .card-image-desktop {
         display: unset;
-        max-width: 400px;
+        max-width: 348px;
         border-radius: 10px 0 0 10px;
-        width: 50%;
+        width: 56%;
     }
     .card-body {
         border-radius: 0 10px 10px 0;
+        gap: 0.875rem;
+        padding: 1.75rem 1.75rem;
     }
 }
