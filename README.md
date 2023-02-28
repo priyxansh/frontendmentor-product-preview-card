@@ -5,11 +5,12 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ## Table of contents
 
 -   [Overview](#overview)
-    -   [The challenge](#the-challenge)
     -   [Screenshot](#screenshot)
     -   [Links](#links)
+-   [My process](#my-process)
     -   [Built with](#built-with)
     -   [What I learned](#what-i-learned)
+-   [Author](#author)
 
 ## Overview
 
@@ -30,6 +31,8 @@ Users should be able to:
 
 -   [Live Site](https://priyxansh.github.io/frontendmentor-product-preview-card/)
 
+## My process
+
 ### Built with
 
 -   Semantic HTML5 markup
@@ -40,4 +43,8 @@ Users should be able to:
 
 ### What I learned
 
-A very easy project which focuses on the basics of CSS properties like flexbox and grid.
+The basics of CSS properties like flexbox and grid, and the usage of custom CSS properties.
+
+## Author
+
+-   Frontend Mentor - [@priyxansh](https://www.frontendmentor.io/profile/priyxansh)
